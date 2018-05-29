@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Bienvenido a Math Asesor Schools! <span class="icon-emo-happy"></span></h2>
+  <p class="lead">
+    Si ya tienes una cuenta activada ingresa <a href="{% url 'login' %}">log in</a>. Si eres nuevo en Math Asesor, empieza
+    creando una cuenta como <a href="{% url 'student_signup' %}">Estudiante</a> o <a href="{% url 'teacher_signup' %}">Maestro</a>.
+  </p>
+  <hr>
+  <h3>Que es Math Asesor?</h3>
+  <p>
+    En este sistema, los usuarios pueden registrarse como alumnos o bien como maestros. Los maestros pueden
+    crear examenes y los alumnos responder los examenes basados en la modalidad o especialidad que elijan.
+  </p>
+  <p class="mb-0"> Equipo Negro<br></p>
+{% endblock %}
